@@ -1,4 +1,4 @@
-<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
         "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
 <beans>
@@ -17,4 +17,26 @@
 		<property name="eventOrganiser" value="Arun"></property>
 		<property name="fare" value="500"></property>
 	</bean>
+</beans>
+ -->
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+        <bean id="event1" class="com.spring.Event">
+                <property name="eventName" value="Magic Show" />
+                <property name="eventOrganiser" value="Vadivel" />
+                <property name="fare" value="650" />
+        </bean>
+        <bean id="event2" class="com.spring.Event">
+                <property name="eventName" value="Puppet Show" />
+                <property name="eventOrganiser" value="Maggie" />
+                <property name="fare" value="250" />
+        </bean>
+        <bean id="event3" class="com.spring.Event">
+                <property name="eventName" value="Standup Comedy" />
+                <property name="eventOrganiser" value="Arun" />
+                <property name="fare" value="500" />
+        </bean>
 </beans>
