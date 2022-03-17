@@ -1,0 +1,20 @@
+What if you want to externally pass the values to beans? / How to configure property externally?
+	this is called as external property configuration
+	for this we use application.properties
+	and pass this file in java configuration using @PropertySource(value = "classPath / filePath"
+	after use @Values("${}") to access
+
+@ComponentScan - to tell spring to scan all the classes for annotation
+
+
+---------------------------------------------------------JDBC---------------------------------------------------------------
+ORM - Object Relational Mapping ( Mapping of Java Class with table can be done with ORM, 
+								  One of the popular ORM frameWork is Hibernate,
+								  Every ORM framework is based on one API - JPA (Java Persistence API) )
+	Table Employee
+	Table Skills references eid
+	
+	@Java end
+	class Employee{
+		List<String> skills;
+	}
