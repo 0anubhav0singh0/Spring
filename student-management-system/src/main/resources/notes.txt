@@ -1,0 +1,23 @@
+Why do we use repository in Spring boot?
+	Spring @Repository annotation is used to indicate that the class provides the mechanism for storage, 
+	retrieval, search, update and delete operation on objects.
+	
+What is stereotype annotation in Spring boot?
+	Stereotype annotations are markers for any class that fulfills a role within an application. 
+	This helps remove, or at least greatly reduce, the Spring XML configuration required for these components.
+	
+	
+When not to @Autowire in Spring / Spring Boot 	
+	https://eng.zemosolabs.com/when-not-to-autowire-in-spring-spring-boot-93e6a01cb793
+	
+What is a CommandLineRunner?
+	CommandLineRunner is a simple Spring Boot interface with a run method. 
+	Spring Boot will automatically call the run method of all beans implementing this interface after the application context has been loaded.
+
+Why use CommandLineRunner interface
+	Command line runners are a useful functionality to execute the various types of code that only have to be run once, right after application startup. 
+	FYI, Spring Batch relies on these runners in order to trigger the execution of the jobs.
+	
+Why do we use CommandLineRunner in spring boot?
+	Application Runner and Command Line Runner interfaces lets you to execute the code after the Spring Boot application is started. 
+	You can use these interfaces to perform any actions immediately after the application has started.
