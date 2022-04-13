@@ -1,0 +1,37 @@
+JavaMail API ----- (youtu.be/sWKlJ4NH2gg)
+	- Provides a platform and protocol independent framework to build mail and messaging applications
+	- Optional package for reading, composing and sending email
+	- The protocols that support the Java Mail API are :-
+		- (SMTP) Simple Mail Transfer Protocol  		- Provides a mechanism deliver email 
+		- (POP)  Post Office Protocol 					- provides access via an Internet Protocol (IP) network for a user client application to a mailbox ( maildrop) maintained on a mail server.
+		- (IMAP) Internet Message Access Protocol 		- provides support for multiple mailbox for each each user / is an Application Layer Internet protocol that allows an e-mail client to access email on a remote mail server.
+		- (MIME) Multipurpose Internet Mail Extension	- Defines the content of what is being transfered 
+		- (NNTP) Network NEWS Transfer Protocol			- Protocol used for transporting Usenet news articles (netnews) between news server, and for reading/posting articles by the end user client application
+	- Java application uses Java Mail API to compose and receive email's, the SMTP, IMAP and POP transfers the message packages from the server side to the client side
+	- Classes of Java Mail API
+		- javax.mail.Session
+		- javax.mail.Message
+		- javax.mail.Address
+		- javax.mail.Authenticator 
+		- javax.mail.Transport
+		- javax.mail.Store
+		- javax.mail.Folder
+		- javax.mail.Internet.MimeMessage
+		- javax.mail..Internet.Address
+	- Steps followed in sending an email are 
+		- 1. Getting a session
+		- 2. Creating a default mimemessage object 
+		- 3. Set from,to and subject in the message
+		- 4. Set the actual message as Message.setText
+		- 5. Send the message using the transport object	
+	- While checking an email open the respective folder and only check the header of each message i.e. from, to and subject
+	- Fetching an email along with the header also read the content by recognizing the content type
+	
+
+
+Features of Properties class:
+	- Properties is a subclass of Hashtable.
+	- It is used to maintain a list of values in which the key is a string and the value is also a string i.e; it can be used to store and retrieve string type data from the properties file.
+	- Properties class can specify other properties list as it’s the default. If a particular key property is not present in the original Properties list, the default properties will be searched.
+	- Properties object does not require external synchronization and Multiple threads can share a single Properties object.
+	- Also, it can be used to retrieve the properties of the system.
