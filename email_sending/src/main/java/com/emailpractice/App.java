@@ -22,8 +22,8 @@ public class App {
 		System.out.println("Preparing to send message....");
 		String message = "Hello Dear";
 		String subject = "confirmation";
-		String to = "anubhavsingh9929@gmail.com";
-		String from = "singhanubhav9922@gmail.com";
+		String to = "to@gmail.com";
+		String from = "from@gmail.com";
 
 		// iska matlab hai ki jab bhi aapko jarurat padegi to aap sendEmail wale
 		// function ko call karoge
@@ -59,7 +59,7 @@ public class App {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
 				// TODO Auto-generated method stub
-				return new PasswordAuthentication("singhanubhav9922@gmail.com", "Anubhav@1010");
+				return new PasswordAuthentication("from@gmail.com", "******");
 			}
 
 		});
@@ -145,7 +145,7 @@ public class App {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
 				// TODO Auto-generated method stub
-				return new PasswordAuthentication("singhanubhav9922@gmail.com", "Anubhav@1010");
+				return new PasswordAuthentication("from@gmail.com", "*********");
 			}
 
 		});
