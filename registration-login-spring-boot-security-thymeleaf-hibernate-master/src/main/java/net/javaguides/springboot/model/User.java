@@ -33,6 +33,19 @@ public class User {
 	
 	private String password;
 	
+	// collection of roles, one user can have multiple roles
+	// Defines strategies for fetching data from the database.
+	// The EAGER strategy is a requirement on the persistenceprovider runtime that data must be eagerly fetched. 
+	// EAGER :- Defines that data must be eagerly fetched. 
+	/*
+	 * What is cascade operation?
+	 * Entities that use relationships often have dependencies on the existence of the other entity in the relationship
+	 * */
+	// @JoinTable :- To create a third table to maintain a mapping between these two table
+	/*
+	 * A join table is typically used in the mapping of many-to-many and unidirectional one-to-many associations. 
+	 * It may also be used to map bidirectional many-to-one/one-to-many associations,unidirectional many-to-one relationships, and one-to-one associations (both bidirectional and unidirectional). 
+	 * */
 	@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@JoinTable(
 			name = "users_roles",
