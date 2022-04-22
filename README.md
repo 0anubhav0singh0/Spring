@@ -1,4 +1,4 @@
-@ModelAttribute at the Method Level - The impact of @ModelAttribute when placed over a method.
+## @ModelAttribute at the Method Level - The impact of @ModelAttribute when placed over a method.
 	- A method with a @ModelAttribute on top it executes first, followed by a handler method.
 	- Using @ModelAttribute at the method level, we can set data in the Model before a handler method executes.
 		- In simple words it helps us to prepopulate the Model object before a RequestMapping invokes
@@ -10,7 +10,7 @@
 	  Once it appears in the model, the parameter field should be populated from all request parameters with matching names.
 
 
-difference between @RequestParam and @ModelAttribute
+## difference between @RequestParam and @ModelAttribute
 	- @ModelAttribute: Bind the entire Java object (such as Employee). Support multiple request parameters
 	- @RequestParam: Combine a single request parameter (like firstName)
 	- @RequestParam is most suitable for reading a small params.
@@ -19,12 +19,12 @@ difference between @RequestParam and @ModelAttribute
 	- When using @RequestParam() and @RequestBody at the same time, the parameters specified by @RequestParam() can be ordinary elements, arrays, collections, objects, etc.
 
 
-@RequestBody
+## @RequestBody
 	- @RequestBody is mainly used to receive the data in the json string passed from the front end to the back end (data in the request body);
 	- @RequestBody is used for post requests, not for get requests.
 	- Note: A request has only one RequestBody; a request can have multiple RequestParams.
 
 
-FETCH TYPE
+## FETCH TYPE
 	- LAZY 	:- In Lazy loading, associated data loads only when we explicitly call getter or size method
 	- EAGER :- It is a design pattern in which data loading occurs on the spot
